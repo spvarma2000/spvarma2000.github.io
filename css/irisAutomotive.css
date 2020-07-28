@@ -43,7 +43,7 @@ p {
 .navbar-expand-lg .navbar-nav .nav-link { padding: 0; }
 
 .navbar-expand-lg .navbar-nav .ia-nav-link {
-    font-size: 1.3rem;
+    font-size: 1.0rem;
     font-weight: 400;
     color: white;    
     padding-bottom: 30px;    
@@ -248,7 +248,7 @@ textarea {
 
     .navbar-expand-lg .navbar-nav .ia-nav-link {
         color: white;
-        font-size: 1.1rem;
+        font-size: 1.0rem;
         padding: 13px 20px;
     }
 
