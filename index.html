@@ -1,80 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<title>Iris Automotive Research</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/irisAutoResearch.css">
+<style>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Iris Automotive</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="fontawesome/css/all.min.css" rel="stylesheet"/>
-    <link href="css/irisAutomotive.css" rel="stylesheet"/>
-</head>
+
+</style>
 <body>
-    <div class="ia-container">        
-        <div>
-            <div class="ia-row pt-4">
-                <div class="ia-col-left">
-                    <div class="ia-site-header media">
-                        <img src="img/logo_small.jpg" alt="Iris Automotive Logo" >
-                    </div>
-                </div>
-                <div class="ia-col-right">
-                    <nav class="navbar navbar-expand-lg" id="ia-main-nav">
-                        <button class="navbar-toggler toggler-example mr-0 ml-auto" type="button" 
-                            data-toggle="collapse" data-target="#navbar-nav" 
-                            aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span><i class="fas fa-bars"></i></span>
-                        </button>
-                        <div class="collapse navbar-collapse ia-nav" id="navbar-nav">
-                            <ul class="navbar-nav text-uppercase">
-                                <li class="nav-item active">
-                                    <a class="nav-link ia-nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link ia-nav-link" href="about.html">ABOUT US</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link ia-nav-link" href="foundersBlog.html">FOUNDER'S BLOG</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link ia-nav-link" href="career.html">CAREER</a>
-                                </li>                            
-                                <li class="nav-item">
-                                    <a class="nav-link ia-nav-link" href="contact.html">Contact</a>
-                                </li>
-                            </ul>                            
-                        </div>                        
-                    </nav>
-                </div>
-            </div>
-            <div class="ia-row">
-                <div class="ia-row-div">
-                    <img src="img/banner.jpg" width="100%">
-                </div>
-            </div>
-            <div class="ia-row">
-                <main class="ia-col-left">
-                    <section class="ia-content">
-                        <img src="img/evSpark.jpg" width="100%"  alt="Spark">
-                    </section>
-                </main>
-                <main class="ia-col-right">
-                    <section class="ia-content">
-                        <img src="img/title.jpg" width="100%"  alt="Where will EV's Take us">
-                    </section>
-                </main>
-                
-            </div>
-			<div class="ia-row" style="height:200px;">
-			</div>
-        </div>        
-    </div>
 
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.backstretch.min.js"></script>
-    <script src="js/irisAutomotive.js"></script>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-wide"><img src="img/logo.png"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#home" class="w3-bar-item w3-button">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button">ABOUT US</a>
+      <a href="#foundersBlog" class="w3-bar-item w3-button">FOUNDER'S BLOG</a>
+      <a href="#career" class="w3-bar-item w3-button">CAREEER</a>
+      <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+  <a href="#foundersBlog" onclick="w3_close()" class="w3-bar-item w3-button">FOUNDER'S BLOG</a>
+  <a href="#career" onclick="w3_close()" class="w3-bar-item w3-button">CAREER</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- HOME -->
+<div class="w3-container" style="padding:130px 16px" id="home">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="img/evSpark.jpg" alt="EvSpark" width="70%">
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="img/title.jpg" alt="EVTitle" width="70%">
+    </div>
+  </div>
+</div>
+<!-- ABOUT US -->
+<div class="w3-container" style="padding:130px 16px" id="about">
+  <div class="w3-row-padding">
+    <div class="w3-col m6" style="padding-top: 150px;">
+      <p style="width: 80%; margin: auto;">EVs are no more dumb, slow or impractical but inverse. 
+        A simple and efficient EV architecture is a freedom to realize concepts that are merely considered as a future or just a dream.</p>
+        <br/><br/>
+      <p style="width: 80%; margin: auto;">Our vision is to explore the possibilities of an EV architecture to create exciting mobility solutions to make our lives better.</p>
+      <img class="w3-image w3-round-large" src="img/rethinkMobility.jpg" alt="EvSpark" width="70%">
+    </div>
+    <div class="w3-col m6" style="text-align: center;">
+        <h3>Founder's Statement</h3>
+        <div id="pdfDiv"></div>
+    </div>
+  </div>
+</div>
+<!-- FOUNDERS BLOG -->
+<div class="w3-container" style="padding:130px 16px" id="foundersBlog">
+  <div class="w3-row-padding" style="text-align: center; padding-top: 60px;">
+    <a href="https://spvarma2000.blogspot.com/" target="_blank"><img src="img/blog.jpg" width="60%"></a>
+    <br/>
+    <br/>
+    <a class="ia-link" href="https://spvarma2000.blogspot.com/" target="_blank" style="font-size: 20px;" >Click here to visit our founder's blog.</a>
+  </div>
+</div>
+
+<!-- CAREERS -->
+<div class="w3-container" style="padding:130px 16px" id="career">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+        <img src="img/career.jpg" width="80%">
+    </div>
+    <div class="w3-col m6" style="padding-top: 250px;">
+      <p style="width: 60%; margin: auto;">We are getting ready to make some awesome stuff. 
+        Please stay connected with us on our social media handles to get updates on all our activities.</p>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="w3-container" style="padding:130px 16px" id="contact">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <img src="img/hello.jpg" width="60%">
+    </div>
+    <div class="w3-col m6 ia-middleDiv">
+      <div>
+        <p>We will be happy to talk to enthusiatic people like you. Do email us at 
+            <a  class="ia-link" href="mailto:hello@irisautoresearch.com">hello@irisautoresearch.com</a> or contact us on our social media channels.
+        </p>
+      </div> 
+      <br/>
+      <br>
+      <div>
+        <a href="https://twitter.com/irisautore" target="_blank" class="fa ia-social-button fa-twitter"></a>
+        <a href="https://www.linkedin.com/company/irisauto-re/" target="_blank" class="fa ia-social-button fa-linkedin"></a>
+        <a href="https://www.instagram.com/irisautoresearch/" target="_blank" class="fa ia-social-button fa-instagram"></a>
+        <a href="https://www.facebook.com/irisautoresearch" target="_blank" class="fa ia-social-button fa-facebook"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="fa ia-social-button fa-long-arrow-up" aria-hidden="true"></a>
+</footer>
+ 
+<script src="js/index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.min.js"></script>
+<script>PDFObject.embed("files/FoundersStatement_V2.pdf", "#pdfDiv");</script>
 </body>
 </html>
