@@ -1,0 +1,56 @@
+body, html {
+    height: 100%;
+    line-height: 1.8;
+    background-color:#000000;
+    scroll-behavior:smooth;
+    color: white;
+	font-size:18px;
+  }
+
+  .w3-top
+  {
+      padding-left: 10px;
+      padding-right: 10px;
+      /* margin-top: 20px; */
+  }
+  
+  .w3-bar .w3-button 
+  {
+    padding: 16px;
+  }
+
+  .w3-col{
+      text-align: center;
+      vertical-align: middle;
+  }
+
+  /* .w3-light-grey{width: 50px; height: 50px; border-radius: 50%;} */
+  
+.pdfobject-container { width: 80%; height: 600px; text-align: center; margin: 0 auto; border: 1rem solid rgba(0,0,0,.1); }
+
+#foundersBlog{
+  background-image: url("../img/blogBackground.jpg") no-repeat;
+}
+
+.ia-middleDiv
+{
+  height: 600px !important;
+  margin: auto !important;
+  padding: 100px !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+ 
+.ia-link{
+  color: #4B8CDB;
+  text-decoration: none;
+}
+
+.ia-social-button{
+  padding: 12px;
+  text-decoration: none;
+  background-color: #4B8CDB;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
